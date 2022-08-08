@@ -1,0 +1,15 @@
+print( "lua脚本已启动" )
+
+function Awake( )
+	print("Awake")
+	print( gameObject.name )
+end
+
+function Start( )
+	print( "Start" )
+end
+
+function Update( )
+	print( "Update" )
+end
+

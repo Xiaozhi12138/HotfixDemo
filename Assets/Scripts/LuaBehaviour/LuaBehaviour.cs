@@ -75,6 +75,7 @@ public class LuaBehaviour : MonoBehaviour {
 
 
     protected virtual void Awake() {
+        this.InitPanelFunc( );
         //InitPanelFunc();
         if (awake != null) {
             awake();

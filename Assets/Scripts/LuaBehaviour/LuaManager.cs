@@ -127,7 +127,8 @@ public class LuaManager : MonoSingleton<LuaManager> {
     /// <returns></returns>
     byte[] CustomAssetBundleLoader(ref string fileName) {
         //名字为lua的AB包存储所有的lua文件
-        TextAsset asset = ABManager.Instance.LoadAsset<TextAsset>("lua", fileName);
+        TextAsset asset = ABManager.Instance.LoadAsset<TextAsset>("test.ii", fileName );
+        Debug.Log( asset );
         //不一定加载到资源
         if (asset != null) {
             return asset.bytes;
